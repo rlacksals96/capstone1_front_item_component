@@ -1,11 +1,12 @@
 import './App.css';
 import {useState} from 'react';
 import MusicPlayer from "./MusicPlayer";
+import Todo from './Todo';
 function App() {
     const [isClock,setIsClock]=useState(true);
     const [isAsmr,setIsAsmr]=useState(true);
     const[isClassic,setIsClassic]=useState(true);
-    const [isTodoList,setIsTodoList]=useState(true);
+    const [isTodoList,setIsTodoList]=useState(false);
     const handleClock=()=>{
         setIsClock(!isClock)
     }
@@ -53,8 +54,8 @@ function App() {
             <div className="to_do_list_container">
                 {isTodoList ? <div className="mask">
                         <div className="notice">to do list를 사용하려면 상단의 버튼을 클릭하세요</div>
-                    </div> :
-                    <div>add component</div>
+                    </div> :<Todo/>
+
                 }
             </div>
         </div>

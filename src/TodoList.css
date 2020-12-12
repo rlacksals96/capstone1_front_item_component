@@ -1,0 +1,19 @@
+.itemStyle{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 15px;
+    list-style-type: none;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+.chkbox{
+
+    float: left;
+    width: 17px;
+    height: 17px;
+}
+.chkbox:hover{
+    cursor: pointer;
+}
