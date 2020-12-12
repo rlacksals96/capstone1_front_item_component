@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Timer{
+  background: #8644c4;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+} */
+
+#pomodoro{
+  /* width: 360px;
+  height: 400px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mrpomodoro{
+  width: 100px;
+}
+
+#display{
+  text-align: center;
+}
+
+#timer-label{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#time-left{
+  font-size: 3rem
+}
+
+/* .button{
+  background: none;
+  border: 2px solid #d0a5ff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  color: white;
+  outline: none;
+}
+
+.button:hover{
+  opacity: 0.8;
+  background: #d0a5ff;
+  color: #8644c4;
+}
+
+.button:active{
+  transform: translateY(2px);
+} */
+
+#control-block{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 20%;
+  text-align: center;
+  box-sizing: border;
+  margin-top: 10px;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10px;
+}
+
+.controls button{
+  padding: 0.2rem 0.4rem;
+  font-weight: 900
+}
+
+#reset{
+  margin-left: 10px
+}
+
+.time{
+  font-size: 1.4rem
+}

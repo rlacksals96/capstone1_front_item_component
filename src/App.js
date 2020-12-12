@@ -2,27 +2,63 @@ import './App.css';
 import {useState} from 'react';
 import MusicPlayer from "./MusicPlayer";
 import Todo from './Todo';
+import Timer from './Timer';
+
+const submitHandler = async () => {
+    let myHeaders = new Headers();
+    myHeaders.append("Authorization", "");
+    myHeaders.append("Content-Type", "application/json");
+
+    let raw = JSON.stringify(100);  //coin값?
+    let requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+    let status='';
+    fetch("/coin", requestOptions)    //url()+"/coin"
+        .then(response => {
+            status=response.status;
+            return response.json();
+        })
+        .then(result => {
+             //console.log(result)
+            if(status===200){
+
+            }
+        })
+        .catch(error => console.log('error', error));
+ };
+
 function App() {
     const [isClock,setIsClock]=useState(true);
     const [isAsmr,setIsAsmr]=useState(true);
     const[isClassic,setIsClassic]=useState(true);
     const [isTodoList,setIsTodoList]=useState(true);
+
     const handleClock=()=>{
+        submitHandler();
         alert("clock을 구입하였습니다. 100 coin 차감됩니다")
         setIsClock(!isClock)
     }
     const handleAsmr=()=>{
+        submitHandler();
         alert("ASMR을 구입하였습니다. 100 coin 차감됩니다")
         setIsAsmr(!isAsmr)
     }
     const handleClassic=()=>{
+        submitHandler();
         alert("classic 음악을 구입하였습니다. 100 coin 차감됩니다")
         setIsClassic(!isClassic)
     }
     const handleTodoList=()=>{
+        submitHandler();
         alert("todo list를 구입하였습니다. 100 coin 차감됩니다")
         setIsTodoList(!isTodoList)
     }
+
+    
   return (
     <div className="App">
         {/*{window.moveTo(0,-1)}*/}
@@ -40,7 +76,7 @@ function App() {
                 {isClock? <div className="mask">
                         <div className="notice">포모도로 시계를 사용하려면 상단의 버튼을 클릭하세요</div>
                     </div>:
-                    <div>add component</div>
+                    <div><Timer></Timer></div>
                 }
             </div>
             <div className="asmr_music_container">
