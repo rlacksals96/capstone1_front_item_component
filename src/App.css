@@ -70,10 +70,16 @@ background-color: #373737;
   margin-top: 5px;
 
 }
+.notice{
+  font-size: 20px;
+
+}
+
 .btn_style{
   margin: 5px;
   width: 100px;
   height: 30px;
+
 
 }
 #select_text{
