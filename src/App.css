@@ -28,32 +28,58 @@
 .App-link {
   color: #61dafb;
 }
-.clock{
-  background-color: red;
-  position: static;
-  height: 300px;
-  width: auto;
+
+.item_container{
 
 }
-.asmr_music{
-  background-color: green;
-  position: static;
-  height: 100px;
-  width: auto;
-}
-.classic_music{
-  background-color: blue;
-  position: static;
-  height: 100px;
-  width: auto;
-}
-.to_do_list{
-  background-color: pink;
-  position: static;
-  height: 350px;
-  width: auto;
+.mask{
+background-color: #373737;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+
 }
 
+.clock_container{
+  position: static;
+  height: 200px;
+  width: auto;
+  border: 5px solid black;
+}
+
+.asmr_music_container{
+  position: static;
+  height: 70px;
+  width: auto;
+  border: 5px solid black;
+  margin-top: 5px;
+}
+.classic_music_container{
+  position: static;
+  height: 70px;
+  width: auto;
+  border: 5px solid black;
+  margin-top: 5px;
+
+}
+.to_do_list_container{
+  position: static;
+  height: 200px;
+  width: auto;
+  border: 5px solid black;
+  margin-top: 5px;
+
+}
+.btn_style{
+  margin: 5px;
+  width: 100px;
+  height: 30px;
+
+}
+#select_text{
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
