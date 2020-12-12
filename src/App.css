@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -26,6 +27,31 @@
 
 .App-link {
   color: #61dafb;
+}
+.clock{
+  background-color: red;
+  position: static;
+  height: 300px;
+  width: auto;
+
+}
+.asmr_music{
+  background-color: green;
+  position: static;
+  height: 100px;
+  width: auto;
+}
+.classic_music{
+  background-color: blue;
+  position: static;
+  height: 100px;
+  width: auto;
+}
+.to_do_list{
+  background-color: pink;
+  position: static;
+  height: 350px;
+  width: auto;
 }
 
 @keyframes App-logo-spin {
