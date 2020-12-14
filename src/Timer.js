@@ -6,9 +6,9 @@ let countdown;
 let pause;
 
 const initialState = {
-  leftTime: "25:00",
+  leftTime: "1:00",
   breakTime: 5,
-  sessionTime: 25,
+  sessionTime: 1,
   isPaused: true,
   isSession: true
 };
